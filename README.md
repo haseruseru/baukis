@@ -12,5 +12,7 @@ Bauis は企業向けの顧客管理システム(Ruby onRails 学習用サンプ
 
 == 注意点
 railsをproductionモードで起動する際には毎回コマンドが必要
-``` export SECRET_KEY_BASE=`cat ~/.baukis_secret_key_base` ```
+
+`` export SECRET_KEY_BASE=`cat ~/.baukis_secret_key_base` ``
+
 ※バッククオートに注意
