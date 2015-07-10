@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20150710174603) do
 
-  create_table "staff_members", primary_key: "member_id", force: true do |t|
+  create_table "staff_members", force: true do |t|
     t.string   "email",                            null: false
     t.string   "email_for_index",                  null: false
     t.string   "family_name",                      null: false
