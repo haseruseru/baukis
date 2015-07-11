@@ -3,17 +3,28 @@ Rails.application.routes.draw do
   namespace :staff ,path: '' do
     root 'top#index'
     get 'login' => 'sessions#new' , as: :login
-    post 'session' => 'sessions#create',as: :session
-    delete 'session' => 'sessions#destroy'
+    resource :session ,only: [:create, :destroy]
+    #post 'session'=> 'sessions#craete' ,as: :session
+    #delete 'session' => 'sessions#destroy' 
+    resource :account , expect: [:new, :create, :destory]
+    #単数リソース
+    #つまりこういうこと ,単数なのでid情報いらず
+    #get 'account' => 'account#show'
+    #get 'account/new' =>'account#new'
+    #get 'account/edit' =>'account#edit'
+    #post 'account' => 'account#create'
+    #patch 'account' => 'account#update'
+    #delete 'account' => 'account#destroy'
+    
   end
   
   namespace :admin do
     root 'top#index'
     get 'login' => 'sessions#new' , as: :login
-    post 'session' => 'sessions#create', as: :session
-    delete 'session' => 'sessions#destroy'
-    
-    resources :staff_members 
+    resource :session , only: [:create,:destroy]
+    #post 'session'=> 'sessions#craete' ,as: :session
+    #delete 'session' => 'sessions#destroy' 
+    resources :staff_members #複数リソース
     #つまりこういうこと
     #get 'staff_members' => 'staff_members#index'
     #get 'staff_members/:id' => 'staff_members#show'
