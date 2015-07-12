@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+#  config = Rails.application.config.baukis
   
-  namespace :staff ,path: '' do
+  #constraints host: config[:staff][:host] do
+  namespace :staff ,path:'' do #config[:staff][:path] do
     root 'top#index'
     get 'login' => 'sessions#new' , as: :login
     resource :session ,only: [:create, :destroy]
@@ -16,9 +18,10 @@ Rails.application.routes.draw do
     #patch 'account' => 'account#update'
     #delete 'account' => 'account#destroy'
     
-  end
-  
-  namespace :admin do
+  #end
+end
+#constraints host: config[:admin][:host] do
+namespace :admin do#,path: config[:admin][:path] do
     root 'top#index'
     get 'login' => 'sessions#new' , as: :login
     resource :session , only: [:create,:destroy]
@@ -35,7 +38,8 @@ Rails.application.routes.draw do
     #delete 'staff_members/:id' => 'staff_members#destroy'
     
     
-    end
+   #end
+end
   
   namespace :customer do
     root 'top#index'
