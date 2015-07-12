@@ -33,7 +33,12 @@ Rails.application.configure do
 
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
-
+  
+#config.baukis ={
+ #   staff: { host: 'ruby-on-rails-test-110447.nitrousapp.com' , path: ''},
+  #  admin: { host: 'ruby-on-rails-test-110447.nitrousapp.com', path: 'admin'},
+   # customer: { host: 'ruby-on-rails-test-110447.nitrousapp.com', path:'mypage'}
+    #}
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 end
