@@ -12,7 +12,7 @@ class Staff::AccountsController < Staff::Base
     @staff_member.assign_attributes(staff_member_params)
     
     if @staff_member.save
-      flash.notice= 'アカウントを更新しました'
+      flash.notice = 'アカウントを更新しました'
       redirect_to :staff_account
     else
       render action: 'edit'
