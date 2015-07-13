@@ -80,4 +80,11 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  
+  
+ #config.baukis ={
+  # staff: { host: 'ruby-on-rails-test-110447.nitrousapp.com' , path: ''},
+   # admin: { host: 'ruby-on-rails-test-110447.nitrousapp.com', path: 'admin'},
+    #customer: { host: 'ruby-on-rails-test-110447.nitrousapp.com', path:'mypage'}
+    #}
 end

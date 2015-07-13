@@ -34,4 +34,10 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+  
+  #config.baukis ={
+   # staff: { host: 'ruby-on-rails-test-110447.nitrousapp.com' , path: ''},
+    #admin: { host: 'ruby-on-rails-test-110447.nitrousapp.com', path: 'admin'},
+    #customer: { host: 'ruby-on-rails-test-110447.nitrousapp.com', path:'mypage'}
+    #}
 end
