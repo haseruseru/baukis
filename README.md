@@ -21,7 +21,7 @@ rspec で no match routes　のエラーが出たとき
 
 対処法：
 
-user_route: :コントローラーのフォルダ名
+use_route: :コントローラーのフォルダ名
 
 ```ruby
 it "does something..." do
