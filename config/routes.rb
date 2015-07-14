@@ -27,7 +27,10 @@ namespace :admin do#,path: config[:admin][:path] do
     resource :session , only: [:create,:destroy]
     #post 'session'=> 'sessions#craete' ,as: :session
     #delete 'session' => 'sessions#destroy' 
-    resources :staff_members #複数リソース
+  resources :staff_members do
+    resources :staff_events, only: [:index]
+  end
+  resources :staff_events , only: [:index]
     #つまりこういうこと
     #get 'staff_members' => 'staff_members#index'
     #get 'staff_members/:id' => 'staff_members#show'
