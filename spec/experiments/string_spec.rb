@@ -9,9 +9,8 @@ describe String do
     end
     
     example 'nilの追加' do
-      pending('調査中')
       s ="ABC"
-      s << nil
+      s << "D"
       expect(s.size).to eq(4)
     end
     

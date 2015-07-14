@@ -31,14 +31,14 @@ module Baukis
     
     
     config.generators do |g|
-      g.helper false
+      g.helper true
       g.assets false
       g.test_framework :rspec
-      g.controller_specs false
+      g.controller_specs true
       g.view_specs false
       
     end
     
-    config.action_controller.permit_all_parameters =true
+    
   end
 end
