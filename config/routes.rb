@@ -17,6 +17,8 @@ Rails.application.routes.draw do
     #post 'account' => 'account#create'
     #patch 'account' => 'account#update'
     #delete 'account' => 'account#destroy'
+    resource :password, only: [:show, :edit ,:update ]
+    
     
   #end
 end
