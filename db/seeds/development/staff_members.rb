@@ -21,7 +21,6 @@ given_names = %w{
   松子:マツコ:matsuko
   竹子:タケコ:takeko
   梅子:ウメコ:umeko
-
 }
 
 20.times do |n|
