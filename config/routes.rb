@@ -18,6 +18,7 @@ Rails.application.routes.draw do
     #patch 'account' => 'account#update'
     #delete 'account' => 'account#destroy'
     resource :password, only: [:show, :edit ,:update ]
+    resources :customers
     
     
   #end
